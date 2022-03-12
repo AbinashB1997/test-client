@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package blog_proto;
+
+import "google/protobuf/empty.proto";
+
+service GetController {
+    rpc List(GetListRequest) returns (BlogPost) {}
+}
+
+message GetListRequest {
+    int32 id = 1;
+}
+
+message BlogPost {
+    int32 id = 1;
+    string title = 2;
+    string content = 3;
+}
