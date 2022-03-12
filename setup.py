@@ -11,11 +11,12 @@ setup(
     include_package_data=True,
     zip_false=False,
     install_requires=[
-        "grpcio==1.36.1",
-        "grpcio-tools==1.25.0",
+        "grpcio==1.39.0",
+        "grpcio-tools==1.39.0",
         "grpcio-opentracing==1.1.4",
         "jaeger-client==4.3.0",
-        "protobuf==3.12.2",
-        'setuptools'
+        "protobuf==3.17.3",
+        "python-dateutil==2.8.0",
+        'setuptools',
     ]
 )
